@@ -50,8 +50,8 @@ body {
   border-radius: 3px;
   text-transform: uppercase;
 }
-.parent a.active,
-a:hover {
+
+.parent ul li a:hover {
   background-color: #1b9bff;
   transition: 0.5s;
 }
@@ -133,34 +133,6 @@ li {
 
 .iconss {
   height: 60px;
-}
-
-/* section 2 */
-.col-doc {
-  margin-top: 170px;
-  height: 400px;
-  width: 350px;
-  margin-left: 70px;
-  border-radius: 10px;
-  background: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-
-  box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffffff;
-}
-.col-doc h3 {
-  color: blue;
-}
-.col-doc img {
-  width: 200px;
-  height: 100px;
-  background: rgb(189, 186, 186);
-}
-
-.section2 {
-  padding-bottom: 180px;
 }
 
 /* footer */
@@ -632,6 +604,19 @@ li {
     width: 50%;
     margin-bottom: 30px;
   }
+  .parent {
+    font-size: 7px;
+    width: 485px;
+    margin-top: 14px;
+    height: 88px;
+  }
+  .parent ul li a {
+    font-size: 12px;
+  }
+
+  .parent span {
+    font-size: 18px;
+  }
 }
 @media (max-width: 574px) {
   .footer-col {
@@ -641,9 +626,17 @@ li {
 
 /* hopital */
 .hospital {
+  padding: 20px;
+}
+
+.input-hos {
+  width: 35%;
+  border-radius: 20px;
+
+  height: 40px;
 }
 .hos-head {
-  margin-left: 450px;
+  margin-left: 400px;
   margin-top: 30px;
 }
 .hos-img {
@@ -666,6 +659,10 @@ li {
   align-items: center;
   margin-left: 330px;
   border-radius: 10px;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative;
 }
 
 .search-btn {
@@ -682,6 +679,11 @@ li {
   margin-left: 200px;
   color: #888;
 }
+.hospital h1 {
+  font-size: 40px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: rgb(51, 51, 51);
+}
 .Appiontment {
   width: 400px;
   font-size: 10px;
@@ -690,20 +692,23 @@ li {
   margin: auto;
   align-items: center;
 }
-/* .ads {
-  position: relative;
+.ads {
   border: 1px solid;
   width: 200px;
   height: 500px;
   margin-left: 20px;
 }
+.img-ads {
+  width: 199px;
+  height: 499px;
+}
 .adss {
-  position: relative;
   border: 1px solid;
   width: 200px;
   height: 500px;
   margin-left: 850px;
-} */
+}
+*/
 
 /* doctors */
 
@@ -812,4 +817,270 @@ li {
 
 .counter .box-container .box h3 {
   color: #666;
+}
+
+/* ABOUT */
+.about {
+}
+.about-img {
+  width: 750px;
+  height: 550px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+.about-text {
+  border-radius: 40px;
+
+  margin-top: 40px;
+}
+.about-text h1 {
+  border-bottom: 5px solid;
+  width: 120px;
+  color: #1916f0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+}
+.about-text p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #000000;
+  font-size: 18px;
+}
+
+/* BLOG */
+.post .box-containerL {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.post .box-containerL .box {
+  border-radius: 27px;
+  background: #b5b4e2;
+  box-shadow: 5px 5px 11px #bebebe, -5px -5px 11px #ffffff;
+  width: 350px;
+  height: 440px;
+  margin: 20px;
+  box-shadow: 5px 5px 5px 2px rgba(119, 119, 119, 0.3),
+    -5px -5px 5px 2px rgba(134, 134, 138, 0.8),
+    inset 5px 5px 5px 2px rgba(119, 119, 119, 0.3),
+    inset -5px -5px 5px 2px rgba(7, 1, 1, 0.8);
+}
+
+.blog-img {
+  height: 20rem;
+  width: 90%;
+  border-radius: 10px;
+  margin: 17px;
+}
+
+.post .box-containerL .box .content {
+  padding: 0 1.5rem;
+}
+
+.post .box-containerL .box .content span {
+  color: #666;
+  font-size: 1.5rem;
+  display: block;
+  padding: 1rem 0;
+}
+
+.post .box-containerL .box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+
+.post .box-containerL .box .content:hover h3 {
+  color: var(--blue);
+}
+
+.post .box-containerL .box .content p {
+  font-size: 1.3rem;
+  color: var(--black);
+}
+.headingG {
+  margin-left: 600px;
+  color: #1916f0;
+}
+.button {
+  border-radius: 15px;
+  background: #e0e0e0;
+  box-shadow: 5px 5px 11px #9e99e4, -5px -5px 11px #ffffff;
+  width: 150px;
+  margin-left: 60px;
+  margin-top: 17px;
+  color: #0316bd;
+}
+/* section6 */
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  padding: 20px;
+  width: 100%;
+  background: #8d97cf;
+}
+.contact-us::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(#3bd1ff, #2907eb);
+  border-radius: 50%;
+  transform: translate(-420px, -180px);
+}
+.contact-us::after {
+  content: "";
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: linear-gradient(#2196f3, #83d8ff);
+  border-radius: 50%;
+  transform: translate(400px, 180px);
+}
+.containeer {
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+
+  max-width: 1000px;
+  padding: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+}
+.containeer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  transform: skew((-15deg));
+}
+
+.containeer h2 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.containeer .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.containeer .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 20px;
+}
+.containeer .row100 .col .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: #fff;
+}
+
+.containeer .row100 .col .inputBox input,
+.containeer .row100 .col .inputBox textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000;
+}
+
+.containeer .row100 .col .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.containeer .row100 .col .inputBox input:focus + .text,
+.containeer .row100 .col .inputBox input:valid + .text,
+.containeer .row100 .col .inputBox textarea:focus + .textT,
+.containeer .row100 .col .inputBox textarea:valid + .textT {
+  top: -35px;
+  left: -10px;
+}
+
+.containeer .row100 .col .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.containeer .row100 .col .inputBox input:focus ~ .line,
+.containeer .row100 .col .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.containeer .row100 .col .inputBox textarea:focus ~ .line,
+.containeer .row100 .col .inputBox textarea:valid ~ .line {
+  height: 100%;
+}
+
+.containeer .row100 .col .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.containeer .row100 .col input[type="submit"] {
+  border: none;
+  padding: 10px 40px;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 2px;
+  margin-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .contact-us::before {
+    transform: translate(-200px, -180px);
+  }
+  .contact-us::after {
+    transform: translate(200px, 180px);
+  }
+  .containeer {
+    padding: 20px;
+  }
+  .containeer h2 {
+    font-size: 28px;
+  }
 }

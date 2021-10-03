@@ -2,36 +2,37 @@ import React from "react";
 
 const Section2 = () => {
   return (
-    <div className=" section2 flex">
-      <div className="col-doc ">
-        <img src="pic3.jpeg" />
-        <h2 className="font-color">this about info</h2>
+    <div className=" flex about">
+      <img
+        className="about-img"
+        src="https://pyramidspharmacy.com/wp-content/uploads/elementor/thumbs/Wellness-Infusion-Logo_-01-02-p3qjjbyxnho1b50n3cz3p10dc2n5371kzmc5cvyc5s.png"
+      />
+      <div className="about-text">
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1>About</h1>
+
+        <br />
         <p>
-          lorem20Notice the use of %PUBLIC_URL% in <br />
-          the tags above. It will be replaced with the URL of the `public`
-          folder during the build.
+          Lorem Ipsum is simply dummy text printing and typesetting industry.
+          <br /> Lorem Ipsum has been the industry's standard dummy text ever
+          since
+          <br /> the 1500s, when an unknown printer took a galley of type and
+          scrambled
+          <br /> a type specimen book. It has survived not only five centuries,
+          but also the <br /> into electronic typesetting, remaining essentially
+          unchanged. <br /> Lorem Ipsum is simply dummy text printing and
+          typesetting industry.
+          <br /> Lorem Ipsum has been the industry's standard dummy text ever
+          since
+          <br /> the 1500s, when an unknown printer took a galley of type and
+          scrambled
+          <br /> a type specimen book. It has survived not only five centuries,
+          but also the <br /> into electronic typesetting, remaining essentially
+          unchanged.
         </p>
-        <h3>more infromation</h3>
-      </div>
-      <div className="col-doc">
-        <img src="pic3.jpeg" />
-        <h2 className="font-color">this about info</h2>
-        <p>
-          lorem20Notice the use of %PUBLIC_URL% in <br />
-          the tags above. It will be replaced with the URL of the `public`
-          folder during the build.
-        </p>
-        <h3>more infromation</h3>
-      </div>
-      <div className="col-doc">
-        <img src="pic3.jpeg" />
-        <h2 className="font-color">this about info</h2>
-        <p>
-          lorem20Notice the use of %PUBLIC_URL% in <br />
-          the tags above. It will be replaced with the URL of the `public`
-          folder during the build.
-        </p>
-        <h3>more infromation</h3>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -19,6 +19,9 @@ const Header = () => {
             </li>
             <li>
               <Link to="/Blogs">Blogs</Link>
+            </li>
+            <li>
+              <Link to="/Contact">Contact</Link>
             </li>
             <div className="login-nav">
               <button className="btn">

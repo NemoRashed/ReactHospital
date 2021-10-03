@@ -13,7 +13,7 @@ function Doctors() {
             />
           </div>
           <div className="doc-info">
-            <h1>Doctor Name</h1>
+            <h1></h1>
             <h3>Department:thoraric</h3>
             <h3>type of doctor: adult only</h3>
             <h3>languages:english, arabic</h3>

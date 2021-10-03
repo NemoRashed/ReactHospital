@@ -45,6 +45,8 @@ function LoginBody() {
                   placeholder="UserName"
                   autocomplete="off"
                 />
+                <span className="text">Last Name</span>
+                <span className="line"></span>
               </div>
               <div className="input-box">
                 <input
@@ -55,6 +57,8 @@ function LoginBody() {
                   placeholder="Password"
                   autocomplete="off"
                 />
+                <span className="text">Last Name</span>
+                <span className="line"></span>
               </div>
               <div className="input-box">
                 <input

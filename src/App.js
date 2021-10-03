@@ -1,5 +1,4 @@
 import "./App.css";
-import { motion } from "framer-motion";
 import Footer from "./home/Footer";
 import Header from "./home/header";
 import Section1 from "./home/section1";
@@ -8,21 +7,16 @@ import Section4 from "./home/Section4";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import LoginBody from "./Login/LoginBody";
 import Register from "./Login/Register";
-
 import Hospitals from "./Hospitals/Hospitals";
 import Departments from "./Hospitals/Departments";
 import Doctors from "./Hospitals/Doctors";
-// import { useEffect, useState } from "react";
-// import axios from "axios";
 import Appiontment from "./Hospitals/Appiontment";
+import DepartmentCards from "./Hospitals/DepartmentCards";
+import Section5 from "./home/Section5";
+import Section6 from "./home/Section6";
+import Blogs from "./Blogs/Blogs";
 
 function App() {
-  // const [hospital, sethospital] = useState([]);
-  // useEffect(() => {
-  //   axios
-  //     .get("http://localhost:9000/Api/Hospital")
-  //     .then((res) => console.log(res));
-  // });
   return (
     <div className="App">
       <Router>
@@ -31,14 +25,17 @@ function App() {
           <Route path="/home">
             <Section1 />
             <Section4 />
+            <Section5 />
             <Section2 />
+
+            <Section6 />
           </Route>
 
           <Route path="/Hospitals" component={Hospitals}>
             <Hospitals />
           </Route>
 
-          <Route path="/Department" component={Hospitals}>
+          <Route path="/Department/:id" component={Hospitals}>
             <Departments />
           </Route>
           <Route path="/Doctors">
@@ -48,8 +45,17 @@ function App() {
             <Doctors />
           </Route>
 
-          <Route path="/">
+          <Route path="/Appiontment">
             <Appiontment />
+          </Route>
+          <Route path="/DepartmentCards">
+            <DepartmentCards />
+          </Route>
+          <Route path="/Contact">
+            <Section6 />
+          </Route>
+          <Route path="/Blogs">
+            <Blogs />
           </Route>
 
           <Route path="/Login">
