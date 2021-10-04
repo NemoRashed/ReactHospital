@@ -38,7 +38,7 @@ function App() {
           <Route path="/Department/:id" component={Hospitals}>
             <Departments />
           </Route>
-          <Route path="/Doctors">
+          <Route path="/Doctors/:id">
             <Doctors />
           </Route>
           <Route path="/Bolgs">

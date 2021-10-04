@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import CountUp from "react-countup";
 
 import {
   FaUser,
@@ -20,7 +21,20 @@ function Section4() {
               <FaBuilding
                 style={{ color: "blue", width: "60px", height: "30px" }}
               />
-              <span>120+</span>
+              <CountUp
+                start={0}
+                end={120}
+                duration={2.75}
+                separator=" "
+                decimals={0}
+                decimal=","
+                prefix=" "
+                suffix=" +"
+                onEnd={() => console.log("Ended! 👏")}
+                onStart={() => console.log("Started! 💨")}
+              >
+                <span>120+</span>
+              </CountUp>
               <h3>Hospitals</h3>
             </div>
 
@@ -28,23 +42,62 @@ function Section4() {
               <FaUser
                 style={{ color: "blue", width: "60px", height: "30px" }}
               />
-              <span>100+</span>
+              <CountUp
+                start={0}
+                end={500}
+                duration={2.75}
+                separator=" "
+                decimals={0}
+                decimal=","
+                prefix=" "
+                suffix=" +"
+                onEnd={() => console.log("Ended! 👏")}
+                onStart={() => console.log("Started! 💨")}
+              >
+                <span>500+</span>
+              </CountUp>
               <h3>Doctors</h3>
             </div>
 
             <div class="box" data-aos="fade-up">
               <FaRegSmileBeam
                 style={{ color: "blue", width: "50px", height: "30px" }}
-              />
-              <span>1200+</span>
+              />{" "}
+              <CountUp
+                start={0}
+                end={1200}
+                duration={2.75}
+                separator=" "
+                decimals={0}
+                decimal=","
+                prefix=" "
+                suffix=" +"
+                onEnd={() => console.log("Ended! 👏")}
+                onStart={() => console.log("Started! 💨")}
+              >
+                <span>1200+</span>
+              </CountUp>
               <h3>happy patients</h3>
             </div>
 
             <div class="box" data-aos="fade-up">
               <FaProcedures
                 style={{ color: "blue", width: "50px", height: "30px" }}
-              />
-              <span>130+</span>
+              />{" "}
+              <CountUp
+                start={0}
+                end={130}
+                duration={2.75}
+                separator=" "
+                decimals={0}
+                decimal=","
+                prefix=" "
+                suffix=" +"
+                onEnd={() => console.log("Ended! 👏")}
+                onStart={() => console.log("Started! 💨")}
+              >
+                <span>130+</span>
+              </CountUp>
               <h3>Departments</h3>
             </div>
           </div>

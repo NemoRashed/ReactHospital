@@ -16,11 +16,6 @@ const Section1 = () => {
             <br />
             doctors can
             <span className="font-color">cure patients</span>
-            <br />
-            <span className="font-color"> Medicine </span>cure diseases but only
-            <br />
-            doctors can
-            <span className="font-color">cure patients</span>
           </motion.h2>
 
           <Link to="/Hospitals">

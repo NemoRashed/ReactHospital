@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
+import Doctors from "./Doctors";
 
 function DepartmentCards() {
   const { id } = useParams();

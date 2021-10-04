@@ -1,7 +1,7 @@
 import React from "react";
 import { MdStar } from "react-icons/md";
 
-function Doctors() {
+function Doctors(value) {
   return (
     <>
       <div className="card-info">
@@ -13,7 +13,7 @@ function Doctors() {
             />
           </div>
           <div className="doc-info">
-            <h1></h1>
+            <h1>{value.docName}</h1>
             <h3>Department:thoraric</h3>
             <h3>type of doctor: adult only</h3>
             <h3>languages:english, arabic</h3>

@@ -46,7 +46,7 @@ body {
 .parent ul li a {
   color: var(--primary-color);
   font-size: 17px;
-  padding: 7px 13px;
+  padding: 7px 0px;
   border-radius: 3px;
   text-transform: uppercase;
 }
@@ -56,7 +56,7 @@ body {
   transition: 0.5s;
 }
 .login-nav {
-  margin-left: 260px;
+  margin-left: 240px;
   color: #fff;
 }
 
@@ -112,7 +112,7 @@ li {
   border: 0.5px solid;
   background: var(--primary-color);
   border-radius: 25px;
-  margin-bottom: 200px;
+  margin-bottom: 300px;
   box-shadow: inset -5px -5px 10px #babecc, inset -5px -7px 5px #11111173;
   color: #fff;
   font-size: 17px;
@@ -139,6 +139,9 @@ li {
 .container {
   max-width: 970px;
   margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .row {
   display: flex;
@@ -627,6 +630,9 @@ li {
 /* hopital */
 .hospital {
   padding: 20px;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .input-hos {
@@ -696,7 +702,11 @@ li {
   border: 1px solid;
   width: 200px;
   height: 500px;
-  margin-left: 20px;
+  margin-bottom: 200px;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  margin-top: 180px;
 }
 .img-ads {
   width: 199px;
@@ -707,6 +717,11 @@ li {
   width: 200px;
   height: 500px;
   margin-left: 850px;
+  position: absolute;
+  top: 0;
+  right: 40px;
+  margin-top: 180px;
+  margin-bottom: 200px;
 }
 */
 
