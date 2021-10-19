@@ -65,7 +65,7 @@ function App() {
             <Register />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

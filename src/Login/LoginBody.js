@@ -1,32 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function LoginBody() {
-  var rootProp = document.documentElement.style;
-  var mode = true;
-
-  function changeMode() {
-    if (mode) {
-      darkMode();
-    } else {
-      lightMode();
-    }
-    mode = !mode;
-  }
-
-  function lightMode() {
-    rootProp.setProperty("--background1", "rgba(230, 230, 230)");
-    rootProp.setProperty("--shadow1", "rgba(119, 119, 119, 0.5)");
-    rootProp.setProperty("--shadow2", "rgba(255, 255, 255, 0.85)");
-    rootProp.setProperty("--labelColor", "black");
-  }
-
-  function darkMode() {
-    rootProp.setProperty("--background1", "rgb(9 25 33)");
-    rootProp.setProperty("--shadow1", "rgb(0 0 0 / 45%)");
-    rootProp.setProperty("--shadow2", "rgb(255 255 255 / 12%)");
-    rootProp.setProperty("--labelColor", "rgb(255 255 255 / 59%)");
-  }
-
   return (
     <div>
       {
@@ -37,6 +12,7 @@ function LoginBody() {
           <form action="#" id="login-form">
             <div className="user-details">
               <div className="input-box">
+                <span className="text">UserName</span>
                 <input
                   type="text"
                   className="input-field"
@@ -45,10 +21,11 @@ function LoginBody() {
                   placeholder="UserName"
                   autocomplete="off"
                 />
-                <span className="text">Last Name</span>
+
                 <span className="line"></span>
               </div>
               <div className="input-box">
+                <span className="text">Password</span>
                 <input
                   type="password"
                   className="input-field"
@@ -57,7 +34,7 @@ function LoginBody() {
                   placeholder="Password"
                   autocomplete="off"
                 />
-                <span className="text">Last Name</span>
+
                 <span className="line"></span>
               </div>
               <div className="input-box">
@@ -80,24 +57,17 @@ function LoginBody() {
                   <b className="label">OR</b>
                 </span>
               </center>
+              <center>
+                <Link to="/Register">
+                  <button className="register">Register</button>
+                </Link>
+              </center>
               <div className="social-media-icons">
                 <i className="fa fa-google-plus"></i>
                 <i className="fa fa-facebook"></i>
                 <i className="fa fa-instagram"></i>
                 <i className="fa fa-twitter"></i>
-                <i className="fa fa-pinterest"></i>
               </div>
-              <center>
-                <b className="label">
-                  Forgot Password ?
-                  <span id="toggle" onclick="changeMode();">
-                    Dark Mode
-                  </span>
-                </b>
-                <a href="/Register">
-                  <button className="register">Register</button>
-                </a>
-              </center>
             </div>
           </form>
         </div>

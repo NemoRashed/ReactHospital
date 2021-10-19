@@ -4,7 +4,7 @@ import { MdStar } from "react-icons/md";
 function Doctors(value) {
   return (
     <>
-      <div className="card-info">
+      {/* <div className="card-info">
         <div className=" flex">
           <div>
             <img
@@ -39,7 +39,7 @@ function Doctors(value) {
             <i className="fa fa-twitter"></i>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

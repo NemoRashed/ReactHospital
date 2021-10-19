@@ -55,8 +55,22 @@ function Section6() {
           </div>
         </div>
       </div>
+      <div className="contact-info">
+        <h2>contact </h2>
+        <h4>📌Location- Hargeisa,Somaliland</h4>
+        <h4>📩Email-somalilandhospitals@44gamil.com</h4>
+        <h4>📞Phone- 55444133467</h4>
+        <h4>📞Phone- 99777133467</h4>
+        <div className="social-icons-contact">
+          <i className="fa fa-facebook"></i>
+          <i className="fa fa-instagram"></i>
+          <i className="fa fa-twitter"></i>
+        </div>
+      </div>
     </div>
   );
 }
 
 export default Section6;
+
+//https://www.youtube.com/watch?v=rpujWVkmiPE&t=37s

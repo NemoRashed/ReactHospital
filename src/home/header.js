@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MdAccountCircle } from "react-icons/md";
 
 const Header = () => {
   return (
@@ -23,15 +24,22 @@ const Header = () => {
             <li>
               <Link to="/Contact">Contact</Link>
             </li>
-            <div className="login-nav">
-              <button className="btn">
-                <Link to="/Login">login</Link>
-              </button>
-              {/* <button className="btn">
-              <Link to="/Register">Register</Link>
-            </button> */}
-            </div>
           </ul>
+          <div className="log-reg">
+            <h2>
+              <Link to="/Login" className="h2">
+                <MdAccountCircle />
+                login
+              </Link>
+              /
+            </h2>
+
+            <h2>
+              <Link to="/Register" className="h2">
+                Register
+              </Link>
+            </h2>
+          </div>
         </div>
       </div>
     </div>

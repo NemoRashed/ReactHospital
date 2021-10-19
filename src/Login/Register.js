@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Register() {
   return (
@@ -87,14 +88,12 @@ function Register() {
 
           <div className="footerrr">
             <div className="login">
-              <a href="#">Login</a>
+              <Link to="/Login">Login</Link>
             </div>
             <div className="social-media-icons">
               <i className="fa fa-facebook"></i>
               <i className="fa fa-twitter"></i>
               <i className="fa fa-instagram"></i>
-              <i className="fa fa-google-plus"></i>
-              <i className="fa fa-pinterest"></i>
             </div>
           </div>
         </form>
