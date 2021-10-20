@@ -1,0 +1,31 @@
+{
+  "name": "hospital-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "ReactHospital": "npm start --prefix ReactHospital",
+    "dev": "concurrently \"npm run start\" \"npm run ReactHospital\" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bcrypt": "^5.0.1",
+    "concurrently": "^6.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "google-map-react": "^2.1.10",
+    "mongoose": "^6.0.6",
+    "multer": "^1.4.3",
+    "react-countup": "^6.0.0",
+    "react-google-maps": "^9.4.5",
+    "react-icons": "^4.2.0",
+    "react-map-gl": "^6.1.17",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.1"
+  }
+}
